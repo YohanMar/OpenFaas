@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8082
+functions:
+  get-quote:
+    lang: python3-http
+    handler: ./get-quote
+    image: yohan83/get-quote:latest
