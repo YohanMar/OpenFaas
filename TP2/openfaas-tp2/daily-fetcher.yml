@@ -1,0 +1,20 @@
+language: python3-http
+fprocess: python handler.py
+environment:
+  NATS_URL: "nats://nats-server:4222"
+  USER_ID: "USX"
+  SFTP_HOST: "ftp.heab7543.odns.fr"
+  SFTP_USER: "formation_openfaas@heab7543.odns.fr"
+  SFTP_PASS: "}{?Z]~Pxq!R9"
+build_options:
+  - name: dev
+    packages: 
+      - python3-dev
+      - gcc
+      - make
+      - automake
+      - g++
+      - subversion
+      - musl-dev
+      - libffi-dev
+      - git
